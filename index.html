@@ -146,7 +146,7 @@
             <dt><a href="http://webdatacommons.org/structureddata/2017-12/stats/stats.html">Web Data Commons publication in November 2017</a></dt>
             <dd>Of 26,271,491 domains crawled, 2,685,738 contained embedded JSON-LD.</dd>
             <dt><a href="https://w3techs.com/technologies/details/da-jsonld/all/all">W3Techs reports in January 2018</a></dt>
-            <dd>8.2% of all websites use JSON-LD.</dd>
+            <dd>18.2% of all websites use JSON-LD.</dd>
           </dl>
 
         <p>In the time between original publication by the RDF 1.1 Working Group and now
@@ -179,6 +179,7 @@
             <p>The following features are out of scope, and will not be addressed by this Working Group.</p>
 
             <ul class="out-of-scope">
+              <li class="todo">There must be something...</li>
             </ul>
         </div>
 
@@ -197,8 +198,6 @@
           Deliverables
         </h2>
         <p>More detailed milestones and updated publication schedules are available on the <a href="https://www.w3.org/wiki/json-ld/PubStatus">group publication status page</a>.</p>
-
-        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
 
         <div id="normative">
           <h3>
@@ -220,7 +219,7 @@
                 JSON-based storage engines.</p>
 
               <p class="draft-status"><b>Draft state:</b> <a href="https://json-ld.org/spec/latest/json-ld/">Adopted from JSON for Linking Data CG</a></p>
-              <p class="milestone"><b>Expected completion:</b> Q4 2019.</p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2019. <em class="todo">We could consider an earlier completion, based on workload, and allow remaining WG time to be spent on stretch-goals.</em></p>
               <p><b>Reference Draft:</b> The <a href="https://www.w3.org/TR/2014/REC-json-ld-20140116/">JSON-LD 1.0 Recommendation</a>.</p>
             </dd>
 
@@ -229,13 +228,16 @@
               <p>This specification defines a set of algorithms for programmatic transformations
                 of JSON-LD documents. Restructuring data according to the
                 defined transformations often dramatically simplifies its
-                usage. Furthermore, this document proposes an Application
+                usage. Furthermore, this document defines an Application
                 Programming Interface (API) for developers implementing the
                 specified algorithms.</p>
 
               <p class="draft-status"><b>Draft state:</b> <a href="https://json-ld.org/spec/latest/json-ld-api/">Adopted from JSON for Linking Data CG</a></p>
-              <p class="milestone"><b>Expected completion:</b> Q4 2019.</p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2019. <em class="todo">We could consider an earlier completion, based on workload, and allow remaining WG time to be spent on stretch-goals.</em></p>
               <p><b>Reference Draft:</b> The <a href="https://www.w3.org/TR/2014/REC-json-ld-api-20140116/">JSON-LD 1.0 API Recommendation</a>.</p>
+              <p>The API spec is expected to incorporate the widely used <a href="https://json-ld.org/spec/latest/json-ld-framing/">Framing</a> specification.</p>
+              <p>The API does not define WebIDL interfaces for transforming to and from RDF, as that is an data model, but 
+                we could consider defining transformations to/from specific RDF serializations, to include at least <a href="https://www.w3.org/TR/n-quads/">N-Quads</a>.</p>
             </dd>
           </dl>
 
@@ -250,18 +252,20 @@
             Other non-normative documents may be created such as:
           </p>
           <ul>
-            <li>Test suite and implementation report for the specification;</li>
+            <li>JSON-LD examples specified in <a href="http://yaml.org/spec/1.2/spec.html">YAML</a>;</li>
+            <li>Test suite and implementation report for the specification.</li>
           </ul>
         </div>
 
         <div id="timeline">
           <h3>Timeline</h3>
-            <p class="todo">Put here a timeline view of all deliverables.</p>
-            <ul class="todo">
-              <li>June 2019: First teleconference</li>
-              <li>June 2019: FPWD for JSON-LD 2.0: A JSON-based Serialization for Linked Data</li>
-              <li>June 2019: FPWD for JSON-LD 2.0 Processing Algorithms and API</li>
+            <ul>
+              <li>June 2018: First teleconference</li>
+              <li>June 2018: FPWD for JSON-LD 2.0: A JSON-based Serialization for Linked Data</li>
+              <li>June 2018: FPWD for JSON-LD 2.0 Processing Algorithms and API</li>
               <li>October 2019: First face-to-face meeting</li>
+              <li>December 2019: Recommendation of JSON-LD 2.0: A JSON-based Serialization for Linked Data</li>
+              <li>December 2019: Recommendation of JSON-LD 2.0 Processing Algorithms and API</li>
             </ul>
         </div>
       </section>
@@ -271,21 +275,21 @@
       <section id="coordination">
         <h2>Coordination</h2>
         <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/Charter.html#horizontal-review">horizontal review</a> for accessibility, internationalization, performance, privacy, and security with the relevant Working and Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/2017/Process-20170301/#RecsWD" title="First Public Working Draft">FPWD</a> and at least 3 months before <a href="https://www.w3.org/2017/Process-20170301/#RecsCR" title="Candidate Recommendation">CR</a>, and should be issued when major changes occur in a specification.</p>
-        <p class="issue"><b>Issue:</b> The paragraph above replaces line-item liaisons and dependencies with individual horizontal groups. There's been a suggestion to name and individually link the specific horizontal groups inline, instead of pointing to a page that lists them.</p>
-        <p class="issue"><b>Issue:</b> The requirement for an invitation to review after FPWD and before CR may seem a bit overly restrictive, but it only requires an invitation, not a review, a commitment to review, or even a response from the horizontal group. This compromise offers early notification without introducing a bottleneck.</p>
 
         <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/2017/Process-20170301/#WGCharter">W3C Process Document</a>:</p>
-
-      	<p class="todo">In addition to the above catch-all reference to horizontal review which includes accessibility review, please check with chairs and staff contacts of the <a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a> to determine if an additional liaison statement with more specific information about concrete review issues is needed in the list below.</p>
 
         <div>
           <h3 id="w3c-coordination">W3C Groups</h3>
           <dl>
-            <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
-            <dd><i class="todo">[specific nature of liaison]</i></dd>
-          </dl>
+            <dt><a href="https://www.w3.org/WoT/WG/">Web of Things Working Group</a></dt>
+            <dd>Coordination on indexing representation of node descriptions.</dd>
 
-          <p class="issue"><b>Note:</b> Do not list horizontal groups here, only specific WGs relevant to your work.</p>
+            <dt><a href="https://www.w3.org/publishing/groups/publ-wg/">Publishing Working Group</a></dt>
+            <dd><i class="todo">Ivan?</i></dd>
+
+            <dt><a href="https://www.w3.org/2017/vc/WG/">Verifiable Claims Working Group</a></dt>
+            <dd>Coordination on named graph indexing and support for <a href="https://json-ld.github.io/normalization/spec/">RDF Dataset Normalization</a> and <a href="https://w3c-dvcg.github.io/ld-signatures/">Linked Data Signatures</a>.</dd>
+          </dl>
 
           <h3 id="external-coordination">External Organizations</h3>
           <dl>
@@ -296,8 +300,6 @@
 
         </div>
       </section>
-
-
 
       <section class="participation">
         <h2 id="participation">
@@ -310,7 +312,12 @@
           The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
         </p>
         <p>
-          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+          W3C Members are invited to <i class="todo"><a href="https://www.w3.org/2004/01/pp-impl/#####/join">join this Working Group</a></i>.
+          Individuals who wish to participate as Invited Experts (i.e., they do not represent a W3C Member) should refer to the <a href="https://www.w3.org/2004/08/invexp.html" shape="rect">policy for approval of Invited Experts</a>.
+          The group also welcomes non-Members to contribute technical
+          submissions for consideration upon their agreement to the terms of the
+          <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent
+          Policy</a>.
         </p>
       </section>
 
@@ -325,18 +332,19 @@
         The meetings themselves are not open to public participation, however.
         </p>
         <p>
-          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="">JSON-LD Working Group home page.</a>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <i class="todo"><a href="">JSON-LD Working Group home page.</a></i>
         </p>
         <p>
           Most JSON-LD Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
         </p>
         <p>
-          This group primarily conducts its technical work  <i class="todo">pick one, or both, as appropriate:</i> on the public mailing list <a class="todo" id="public-name" href="mailto:public-[email-list]@w3.org">public-<i class="todo">[email-list]</i>@w3.org</a> (<a class="todo" href="https://lists.w3.org/Archives/Public/public-[email-list]/">archive</a>)
-          <i class="todo">or</i> on <a class="todo" id="public-github" href="[link to Github repo]">GitHub issues</a>.
+          This group primarily conducts its technical work  on the public mailing list <a id="public-name" href="mailto:public-linked-json@w3.org">public-linked-json@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-linked-json/">archive</a>)
+          or on <a id="public-github" href="https://github.com/json-ld/json-ld.org">GitHub issues</a>.
           The public is invited to review, discuss and contribute to this work.
         </p>
         <p>
-          The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
+          The group publishes minutes for each teleconference at <a href="https://json-ld.org/minutes/">https://json-ld.org/minutes/</a>,
+          including an archive of minutes going back to 2011.
         </p>
       </section>
 
