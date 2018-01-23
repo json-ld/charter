@@ -174,19 +174,7 @@
           and address specific issues addressing affected communities, such as Web of Things,
           publishing and other emerging JSON-LD adopters.</p>
 
-        <p>With one exception, when processing legacy JSON-LD documents, JSON-LD processors generate the
-          same expanded output. In limited cases, when operating in 1.0 mode, processors
-          may generate different compacted output. These incompatibilities address issues considered bugs of
-          the 1.0 specifications. Currently, these are limited to the following cases:</p>
-        <ul>
-          <li>In JSON-LD 1.1, terms will be used as compact IRI prefixes when compacting
-            only if a simple term definition is used where the value ends with
-            a URI gen-delim character, or if their expanded term definition
-            contains a @prefix member with the value true. The 1.0 algorithm
-            has been updated to only consider terms that map to a value that
-            ends with a URI gen-delim character.</li>
-          <li>Value Expansion will not turn native values into node objects.</li>
-        </ul>
+        <p>When processing legacy JSON-LD documents, JSON-LD processors generate the same expanded output (the only exceptions are related to <a href="https://www.w3.org/2001/sw/wiki/JSON_LD_Errata">errata in JSON-LD 1.0</a>.</p>
 
         <div id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
