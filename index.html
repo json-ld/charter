@@ -138,9 +138,9 @@
 
       <section id="scope" class="scope">
         <h2>Scope</h2>
-        <p>Since it&quot; original publication in 2014, JSON-LD has become an essential
+        <p>Since it’s original publication in 2014, JSON-LD has become an essential
           format for describing structured data on the World Wide Web. Thanks, in part,
-          to adoption by schema.org as a recommended format, its use on the Web
+          to the adoption by schema.org as a recommended format, its use on the Web
           has grown enormously, used by between 10% to 18.2% of all websites.</p>
           <dl>
             <dt><a href="http://webdatacommons.org/structureddata/2017-12/stats/stats.html">Web Data Commons publication in November 2017</a></dt>
@@ -149,13 +149,13 @@
             <dd>18.2% of all websites use JSON-LD.</dd>
           </dl>
 
-        <p>In the time between original publication by the RDF 1.1 Working Group and now
-          the <a href="https://www.w3.org/community/json-ld/">JSON for Linking Data Community Group</a>
-          has had over 100 participants and over
-          <a href="https://github.com/json-ld/json-ld.org/issues?utf8=✓&q=is%3Aissue+created%3A%3E2014-01-01+-label%3Awebsite+-label%3Aplayground+">100 issues filed</a>.
+        <p>In the time between its original publication by the RDF 1.1 Working Group, the documents have been maintained by
+          the <a href="https://www.w3.org/community/json-ld/">JSON for Linking Data Community Group</a> which
+          has had over 100 participants and filed around
+          <a href="https://github.com/json-ld/json-ld.org/issues?utf8=✓&q=is%3Aissue+created%3A%3E2014-01-01+-label%3Awebsite+-label%3Aplayground+">100 issues</a>.
           In response, the CG has worked to update the specifications and test-suite, accepting
           over <a href="https://github.com/json-ld/json-ld.org/pulls?utf8=✓&q=is%3Apr+created%3A%3E2014-01-01">90 pull requests</a> for a pending CG 1.1 release.
-          This issues generally relate to allowing more natural JSON idioms to be expressed using JSON-LD:
+          These issues generally relate to allowing more natural JSON idioms to be expressed using JSON-LD:
         </p>
         <ul>
           <li>Allow contexts to be defined within term definitions (Scoped Contexts) that apply for values of that term (<a href="https://github.com/json-ld/json-ld.org/pull/445">PR 445</a>)</li>
@@ -167,14 +167,12 @@
           <li>Allow all values to be used in a map, through the use of a transparent <code>@none</code> index (<a href="https://github.com/json-ld/json-ld.org/pull/569">PR 569</a> – pending).</li>
         </ul>
         <p>Additionally, changes have been made to align with updated dependent specifications and
-          to separate the JSON-specific syntax to a more abstract representation compatible
+          to separate the JSON-specific syntax from a more abstract representation compatible
           with binary and other forms closely related to JSON (e.g., <a href="https://tools.ietf.org/html/rfc7049">CBOR</a> and <a href="http://yaml.org/spec/1.2/spec.html">YAML</a>, see <a href="https://github.com/json-ld/json-ld.org/pull/485">PR 485</a>).</p>
 
-        <p class="mission">The <strong>mission</strong> of the <a href="" class="todo">JSON-LD Working Group</a> is to improve the specifications
-          and address specific issues addressing affected communities, such as Web of Things,
-          publishing and other emerging JSON-LD adopters.</p>
+        <p class="mission">The <strong>mission</strong> of the <a href="" class="todo">JSON-LD Working Group</a> is to publish new versions of the JSON-LD Recommendations, superceding the versions published in 2014.</p>
 
-        <p>When processing legacy JSON-LD documents, JSON-LD processors generate the same expanded output (the only exceptions are related to <a href="https://www.w3.org/2001/sw/wiki/JSON_LD_Errata">errata in JSON-LD 1.0</a>).</p>
+        <p>The Working Group ensures backward compatibility with JSON-LD 1.0. This means that, when processing legacy JSON-LD documents, JSON-LD processors generate the same expanded output (the only exceptions are related to <a href="https://www.w3.org/2001/sw/wiki/JSON_LD_Errata">errata in JSON-LD 1.0</a>).</p>
 
         <div id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
@@ -254,7 +252,7 @@
             Other non-normative documents may be created such as:
           </p>
           <ul>
-            <li>JSON-LD examples specified in <a href="http://yaml.org/spec/1.2/spec.html">YAML</a>;</li>
+            <li>JSON-LD examples specified in <a href="http://yaml.org/spec/1.2/spec.html">YAML</a>.</li>
             <li>Test suite and implementation report for the specification.</li>
           </ul>
         </div>
@@ -379,8 +377,6 @@
 
 
       <section id="patentpolicy">
-      <p><i class="todo">[Keep 'Patent Policy' for a Working Group, 'Patent Disclosures' for an Interest Group]</i></p>
-
         <h2>
           Patent Policy
         </h2>
