@@ -124,8 +124,20 @@
 
       <h1 id="title">JSON-LD Working Group Charter</h1>
 
+        <p>Since its original publication in 2014 by the RDF 1.1 Working Group, JSON-LD 1.0 has become an essential
+          format for describing structured data on the World Wide Web. Thanks, in part,
+          to the adoption by <a href="https://schema.org/">schema.org</a> as a recommended format, its use on the Web
+          has grown enormously, used by between 10% to 18.2% of all websites.</p>
+
+        <p>Subsequently, the documents have been maintained by
+          the <a href="https://www.w3.org/community/json-ld/">JSON for Linking Data Community Group</a> which
+          has had over 100 participants and filed around
+          <a href="https://github.com/json-ld/json-ld.org/issues?utf8=✓&q=is%3Aissue+created%3A%3E2014-01-01+-label%3Awebsite+-label%3Aplayground+">100 issues</a>, relating primarily to allowing more natural JSON idioms to be expressed using JSON-LD.
+        </p>
+
       <p class="mission">The <strong>mission</strong> of the <a href="" class="todo">JSON-LD Working Group</a>
-        is to update the JSON-LD 1.0 specifications based on experience, user feedback, and requests for new features.</p>
+        is to update the JSON-LD 1.0 specifications to address specific usability or technical issues based on the community's experiences, implementer feedback, and requests for new features.</p>
+
 
       <div class="noprint">
         <p class="join"><i class="todo"><a href="https://www.w3.org/2004/01/pp-impl/#####/join">Join the JSON-LD Working Group.</a></i></p>
@@ -161,7 +173,7 @@
               Chairs
             </th>
             <td>
-              Rob Sanderson – The Getty Trust<br/>
+              Rob Sanderson – The J. Paul Getty Trust<br/>
               Benjamin Young – Wiley Labs
             </td>
           </tr>
@@ -188,41 +200,19 @@
 
       <section id="scope" class="scope">
         <h2>Scope</h2>
-        <p>Since it’s original publication in 2014, JSON-LD 1.0 has become an essential
-          format for describing structured data on the World Wide Web. Thanks, in part,
-          to the adoption by schema.org as a recommended format, its use on the Web
-          has grown enormously, used by between 10% to 18.2% of all websites.</p>
-          <dl>
-            <dt><a href="http://webdatacommons.org/structureddata/2017-12/stats/stats.html">Web Data Commons publication in November 2017</a></dt>
-            <dd>Of 26,271,491 domains crawled, 2,685,738 contained embedded JSON-LD 1.0.</dd>
-            <dt><a href="https://w3techs.com/technologies/details/da-jsonld/all/all">W3Techs reports in January 2018</a></dt>
-            <dd>18.2% of all websites use JSON-LD 1.0.</dd>
-          </dl>
 
-        <p>In the time between its original publication by the RDF 1.1 Working Group, the documents have been maintained by
-          the <a href="https://www.w3.org/community/json-ld/">JSON for Linking Data Community Group</a> which
-          has had over 100 participants and filed around
-          <a href="https://github.com/json-ld/json-ld.org/issues?utf8=✓&q=is%3Aissue+created%3A%3E2014-01-01+-label%3Awebsite+-label%3Aplayground+">100 issues</a>.
-          In response, the CG has worked to update the specifications and test-suite, accepting
-          over <a href="https://github.com/json-ld/json-ld.org/pulls?utf8=✓&q=is%3Apr+created%3A%3E2014-01-01">90 pull requests</a> for a pending CG 1.1 release.
-          These issues generally relate to allowing more natural JSON idioms to be expressed using JSON-LD.
-        </p>
-        <p>The <a href="" class="todo">JSON-LD Working Group</a> will work to address the needs
-          of the community as expressed through <a href="https://lists.w3.org/Archives/Public/public-linked-json/">email</a> and <a href="https://github.com/json-ld/json-ld.org/issues?utf8=✓&q=is%3Aissue+created%3A%3E2014-01-01+-label%3Awebsite+-label%3Aplayground+">issues</a> along with other
-          emergent considerations of stakeholders for expressing data using JSON
-          and related data formats that are consistent with the general objectives
-          for describing data on the World Wide Web as expressed in
-          <a href="https://www.w3.org/TR/dwbp/">Data on the Web Best Practices</a>.
-          The group will further the Application Programming Interface to include
-          Framing, Filtering and other transformation interfaces.</p>
-        <p>A summary of changes addressed by the <a href="https://www.w3.org/community/json-ld/">JSON for Linking Data Community Group</a>
+        <p>The <a href="" class="todo">JSON-LD Working Group</a> will update the JSON-LD 1.0 technical recommendation to take into account new features and desired simplications that have become apparent since publication. The group will extend the Application Programming Interface to include transformation interfaces, including Framing and Filtering, along with updating the existing APIs based on changes to the syntax.</p>
+
+        <p>A summary of syntax changes proposed for inclusion by the 
+          <a href="https://www.w3.org/community/json-ld/">JSON for Linking Data Community Group</a>
           can be found in <a href="https://json-ld.org/presentations/JSON-LD-Update-TPAC-2017/assets/player/KeynoteDHTMLPlayer.html#0">slides used at TPAC 2018</a>.</p>
 
-        <p class="mission">
-          The <strong>mission</strong> of the <a href="" class="todo">JSON-LD Working Group</a> is to improve the JSON-LD 1.0 specifications and address specific usability or technical issues encountered by various communities, such as Web of Things, Publishing, Web of Data, and other emerging JSON-LD adopters.
-        </p>
-
-        <p>The Working Group ensures backward compatibility with JSON-LD 1.0. This means that, when processing legacy JSON-LD documents, JSON-LD processors generate the same expanded output (the only exceptions are related to <a href="https://www.w3.org/2001/sw/wiki/JSON_LD_Errata">errata in JSON-LD 1.0</a>).</p>
+        <p>The scope of work is limited by the principle of consistency with the objectives
+          for describing data on the World Wide Web as expressed in
+          <a href="https://www.w3.org/TR/dwbp/">Data on the Web Best Practices</a>. 
+          It is further limited by ensuring backward compatibility with JSON-LD 1.0. 
+          This means that, when processing legacy JSON-LD documents, JSON-LD processors generate 
+          the same expanded output, unless that output is subject to <a href="https://www.w3.org/2001/sw/wiki/JSON_LD_Errata">errata in JSON-LD 1.0</a> or is otherwise an unspecified implementation detail.</p>
 
         <div id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
