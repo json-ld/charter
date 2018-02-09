@@ -82,6 +82,8 @@
 
       .todo {
         color: #900;
+        background-color:#FFC !important;
+        font-style: italic;
       }
 
       footer {
@@ -120,11 +122,13 @@
             It is available on <a href="https://github.com/json-ld/charter">GitHub</a>; 
             feel free to raise <a href="https://github.com/json-ld/charter/issues">issues</a> to help further discussion. The plan is to submit this draft for the formal vote at the AC, in March 2018.
           </p>
+          <p>Items (mostly URL-s) that will need update when the charter are accepted are marked <span class="todo">thusly</span>.
       </div>
 
       <h1 id="title">JSON-LD Working Group Charter</h1>
 
-        <p>Since its original publication in 2014 by the RDF 1.1 Working Group, JSON-LD 1.0 has become an essential
+        <p>Since its original publication in 2014 by the RDF 1.1 Working Group, 
+          <a href="https://www.w3.org/TR/2014/REC-json-ld-20140116/">JSON-LD 1.0</a> has become an essential
           format for describing structured data on the World Wide Web. Thanks, in part,
           to the adoption by <a href="https://schema.org/">schema.org</a> as a recommended format, its use on the Web
           has grown enormously, used by between 10% to 18.2% of all websites.</p>
@@ -140,7 +144,7 @@
 
 
       <div class="noprint">
-        <p class="join"><i class="todo"><a href="https://www.w3.org/2004/01/pp-impl/#####/join">Join the JSON-LD Working Group.</a></i></p>
+        <p class="join"><a class="todo" href="https://www.w3.org/2004/01/pp-impl/#####/join">Join the JSON-LD Working Group.</a></p>
       </div>
       
       <section id="details">
@@ -182,7 +186,7 @@
               Team Contacts
             </th>
             <td>
-              <a href="mailto:ivan@w3.org">Ivan Herman</a> <i class="todo">(0.1 <abbr title="Full-Time Equivalent">FTE</abbr>)</i>
+              <a href="mailto:ivan@w3.org">Ivan Herman</a> <span class="todo">(0.1 <abbr title="Full-Time Equivalent">FTE</abbr>)</span>
             </td>
           </tr>
           <tr>
@@ -201,7 +205,7 @@
       <section id="scope" class="scope">
         <h2>Scope</h2>
 
-        <p>The <a href="" class="todo">JSON-LD Working Group</a> will update the JSON-LD 1.0 technical recommendation to take into account new features and desired simplications that have become apparent since publication. The group will extend the Application Programming Interface to include transformation interfaces, including Framing and Filtering, along with updating the existing APIs based on changes to the syntax.</p>
+        <p>The <a href="" class="todo">JSON-LD Working Group</a> will update the <a href="https://www.w3.org/TR/2014/REC-json-ld-20140116/">JSON-LD 1.0 Recommendation</a> to take into account new features and desired simplifications that have become apparent since its publication. The group will also extend the <a href="http://www.w3.org/TR/2014/REC-json-ld-api-20140116/">JSON-LD 1.0 Processing Algorithms and API Recommendation</a> to update the existing APIs based on changes to the syntax, and will consider the inclusion of the widely used <a href="https://json-ld.org/spec/latest/json-ld-framing/">Framing</a> API.</p>
 
         <p>A summary of syntax changes proposed for inclusion by the 
           <a href="https://www.w3.org/community/json-ld/">JSON for Linking Data Community Group</a>
@@ -212,7 +216,7 @@
           for describing data on the World Wide Web as expressed in
           <a href="https://www.w3.org/TR/dwbp/">Data on the Web Best Practices</a>. 
           It is further limited by ensuring backward compatibility with JSON-LD 1.0. 
-          This means that, when processing legacy JSON-LD documents, JSON-LD processors generate 
+          This means that, when processing legacy JSON-LD documents, JSON-LD 1.1 processors generate 
           the same expanded output, unless that output is subject to <a href="https://www.w3.org/2001/sw/wiki/JSON_LD_Errata">errata in JSON-LD 1.0</a> or is otherwise an unspecified implementation detail.</p>
 
         <div id="section-out-of-scope">
@@ -239,7 +243,7 @@
         <h2>
           Deliverables
         </h2>
-        <p>More detailed milestones and updated publication schedules are available on the <a class="todo" href="https://www.w3.org/wiki/json-ld/PubStatus">group publication status page</a>.</p>
+        <p>More detailed milestones and updated publication schedules are available on the <a class="todo" href="https://www.w3.org/@@@@/json-ld/PubStatus">group publication status page</a>.</p>
 
         <p>The Working Group may decide, in case the changes to the specifications, compared to JSON-LD 1.0, are significant, to use the version number 2.0 instead of 1.1 as a designation of the renewed Recommendation.</p>
 
@@ -352,7 +356,7 @@
           The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
         </p>
         <p>
-          W3C Members are invited to <i class="todo"><a href="https://www.w3.org/2004/01/pp-impl/#####/join">join this Working Group</a></i>.
+          W3C Members are invited to <a class="todo" href="https://www.w3.org/2004/01/pp-impl/#####/join">join this Working Group</a>.
           Individuals who wish to participate as Invited Experts (i.e., they do not represent a W3C Member) should refer to the <a href="https://www.w3.org/2004/08/invexp.html" shape="rect">policy for approval of Invited Experts</a>.
           The group also welcomes non-Members to contribute technical
           submissions for consideration upon their agreement to the terms of the
@@ -425,28 +429,12 @@
 
           For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>.
         </p>
-
-        <h2>Patent Disclosures </h2>
-        <p>The Interest Group provides an opportunity to
-          share perspectives on the topic addressed by this charter. W3C reminds
-          Interest Group participants of their obligation to comply with patent
-          disclosure obligations as set out in <a shape="rect" href="https://www.w3.org/Consortium/Patent-Policy/#sec-Disclosure">Section
-            6</a> of the W3C Patent Policy. While the Interest Group does not
-          produce Recommendation-track documents, when Interest Group
-          participants review Recommendation-track specifications from Working
-          Groups, the patent disclosure obligations do apply. For more information about disclosure obligations for this group,
-          please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C
-            Patent Policy Implementation</a>.</p>
       </section>
-
-
 
       <section id="licensing">
         <h2>Licensing</h2>
         <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.</p>
       </section>
-
-
 
       <section id="about">
         <h2>
@@ -532,7 +520,7 @@
 
     <footer>
       <address>
-        <i class="todo"><a href="mailto:ivan@w3.org">Ivan Herman</a></i>
+        <a href="mailto:ivan@w3.org">Ivan Herman</a>
       </address>
 
       <p class="copyright">
