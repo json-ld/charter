@@ -131,13 +131,9 @@
           <a href="https://www.w3.org/TR/2014/REC-json-ld-20140116/">JSON-LD 1.0</a> has become an essential
           format for describing structured data on the World Wide Web. Thanks, in part,
           to the adoption by <a href="https://schema.org/">schema.org</a> as a recommended format, its use on the Web
-          has grown enormously, used by between 10% to 18.2% of all websites.</p>
+          has grown enormously, used by between 10% to 18.2% of all websites (see separate <a href="https://github.com/json-ld/json-ld.org/wiki/Changes-in-Community-Group-Drafts-Targeted-for-1.1">wiki page</a> for more details).</p>
 
-        <p>Subsequently, the documents have been maintained by
-          the <a href="https://www.w3.org/community/json-ld/">JSON for Linking Data Community Group</a> which
-          has had over 100 participants and filed around
-          <a href="https://github.com/json-ld/json-ld.org/issues?utf8=✓&q=is%3Aissue+created%3A%3E2014-01-01+-label%3Awebsite+-label%3Aplayground+">100 issues</a>, relating primarily to allowing more natural JSON idioms to be expressed using JSON-LD.
-        </p>
+        <p>Subsequently the specifications have been discussed within, and errata have been maintained by the <a href="https://www.w3.org/community/json-ld/">JSON for Linking Data Community Group</a>. New <a href="https://github.com/json-ld/json-ld.org/issues?utf8=✓&q=is%3Aissue+created%3A%3E2014-01-01+-label%3Awebsite+-label%3Aplayground+">issues have been raised</a> primarily around allowing more natural JSON idioms to be expressed using JSON-LD</a>. </p>
 
       <p class="mission">The <strong>mission</strong> of the <a href="" class="todo">JSON-LD Working Group</a>
         is to update the JSON-LD 1.0 specifications to address specific usability or technical issues based on the community's experiences, implementer feedback, and requests for new features.</p>
@@ -199,22 +195,15 @@
       <section id="scope" class="scope">
         <h2>Scope</h2>
 
-        <p>The <a href="" class="todo">JSON-LD Working Group</a> will update the <a href="https://www.w3.org/TR/2014/REC-json-ld-20140116/">JSON-LD 1.0 Recommendation</a> to take into account new features and desired simplifications that have become apparent since its publication.
-          The group will also extend the <a href="http://www.w3.org/TR/2014/REC-json-ld-api-20140116/">JSON-LD 1.0 Processing Algorithms and API Recommendation</a> to update the existing APIs based on changes to the syntax.
-          Additionally, the group will release the widely used <a href="https://json-ld.org/spec/latest/json-ld-framing/">Framing</a> API. Work was begun along with JSON-LD 1.0, but never released as a normative specification.</p>
+        <p>The <a href="" class="todo">JSON-LD Working Group</a> will update the <a href="https://www.w3.org/TR/2014/REC-json-ld-20140116/">JSON-LD 1.0 Recommendation</a> to take into account new features and desired simplifications that have become apparent since its publication. The group will also extend the <a href="http://www.w3.org/TR/2014/REC-json-ld-api-20140116/">JSON-LD 1.0 Processing Algorithms and API Recommendation</a> to update the existing APIs corresponding to changes in the JSON-LD Recommendation. Additionally, the group will move the <a href="https://json-ld.org/spec/latest/json-ld-framing/">Framing API</a> CG specification to W3C Recommendation.</p>
 
         <p>A summary of syntax changes proposed for inclusion by the
           <a href="https://www.w3.org/community/json-ld/">JSON for Linking Data Community Group</a>
           can be found on a <a href="https://github.com/json-ld/json-ld.org/wiki/Changes-in-Community-Group-Drafts-Targeted-for-1.1">wiki</a>
           and in <a href="https://json-ld.org/presentations/JSON-LD-Update-TPAC-2017/assets/player/KeynoteDHTMLPlayer.html#0">slides used at TPAC 2017</a>.</p>
 
-        <p>The scope of work is limited by the principle of consistency with the objectives
-          for describing data on the World Wide Web as expressed in
-          <a href="https://www.w3.org/TR/dwbp/">Data on the Web Best Practices</a>.
-          It is further limited by ensuring backward compatibility with JSON-LD 1.0.
-          This means that, when processing legacy JSON-LD documents, JSON-LD 1.1 processors generate
-          the same expanded output, unless that output is subject to <a href="https://www.w3.org/2001/sw/wiki/JSON_LD_Errata">errata in JSON-LD 1.0</a> or is otherwise an unspecified implementation detail.</p>
-
+        <p>The work must be consistent with principles expressed in the <a href="https://www.w3.org/TR/dwbp/">Data on the Web Best Practices</a> Recommendation. All changes must preserve backward compatibility for JSON-LD 1.0 documents. This means that, when processing legacy JSON-LD documents, JSON-LD 1.1 processors generate the same expanded output, unless that output is subject to <a href="https://www.w3.org/2001/sw/wiki/JSON_LD_Errata">errata in JSON-LD 1.0</a> or is otherwise an unspecified implementation detail.</p>
+        
         <div id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
             <p>The following features are out of scope, and will not be addressed by this Working Group.</p>
@@ -256,7 +245,7 @@
               <p>
                 This specification defines JSON-LD 1.1, a JSON-based format to serialize Linked Data.
                 The syntax is designed to easily integrate into deployed systems that already use JSON, and provides a smooth upgrade path from JSON to JSON-LD.
-                JSON-LD 1.1 will supercede the current, <a href="https://www.w3.org/TR/2014/REC-json-ld-20140116/">JSON-LD 1.0 Recommendation</a>.
+                JSON-LD 1.1 will supersede the current, <a href="https://www.w3.org/TR/2014/REC-json-ld-20140116/">JSON-LD 1.0 Recommendation</a>.
               </p>
 
               <p>The Working Group will also handle all the <a href="https://www.w3.org/2001/sw/wiki/JSON_LD_Errata">errata filed for JSON-LD 1.0.</a></p>
@@ -270,7 +259,7 @@
             <dd>
               <p>
                 This specification defines a set of algorithms for programmatic transformations of JSON-LD 1.1 documents.
-                JSON-LD 1.1 API will supercede the current, <a href="https://www.w3.org/TR/2014/REC-json-ld-api-20140116/">JSON-LD 1.0 API Recommendation</a>.
+                JSON-LD 1.1 API will supersede the current, <a href="https://www.w3.org/TR/2014/REC-json-ld-api-20140116/">JSON-LD 1.0 API Recommendation</a>.
                 The Working Group will also consider incorporating the widely used <a href="https://json-ld.org/spec/latest/json-ld-framing/">Framing</a> specification into JSON-LD 1.1 API.
               </p>
 
